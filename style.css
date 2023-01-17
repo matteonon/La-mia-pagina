@@ -1,0 +1,41 @@
+#box { 
+font-weight: medium;
+text-align: center;
+}
+
+.blue h1 {
+color: red;
+font-family: 'Times New Roman', Times, serif;
+font-size: 36pt ;
+font-weight: bold;
+font-style: italic;
+}
+
+#bicicletta {
+text-align: center;
+}
+
+div.piu {
+display: inline-block;
+float: left; 
+width: 300px;   
+border-color: black;
+border-width: 1px;
+border-right-style: solid;
+}
+
+div.singolo {
+display: inline-block;
+float: right; 
+width: 300px; 
+
+}
+
+#contatti {
+  clear:both;
+
+}
+/*div {
+
+display: inline;    
+}*/

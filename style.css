@@ -4,30 +4,37 @@ text-align: center;
 }
 
 .blue h1 {
-color: red;
+color: #ff4500;
 font-family: 'Times New Roman', Times, serif;
 font-size: 36pt ;
 font-weight: bold;
 font-style: italic;
+text-shadow: 6px 6px #eed5d2;
 }
 
 #bicicletta {
 text-align: center;
 }
 
-div.piu {
-display: inline-block;
-float: left; 
-width: 300px;   
-border-color: black;
-border-width: 1px;
-border-right-style: solid;
+.elenco {
+    display: flex;
+    flex-direction: row;
+    column-gap: 10px;
 }
 
-div.singolo {
-display: inline-block;
+.piu {
+background-color: #f0fff0;
+float: left; 
+width: 100%;   
+/*border-color: black;
+border-width: 1px;
+border-right-style: solid;*/
+}
+
+.singolo {
+background-color: #f0ffff;
 float: right; 
-width: 300px; 
+width: 100%; 
 
 }
 

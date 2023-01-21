@@ -1,0 +1,52 @@
+.titolo{
+    text-align: center;
+}
+
+.titolo h1 {
+color: #ff4500;
+font-family: 'Times New Roman', Times, serif;
+font-size: 36pt ;
+font-weight: bold;
+font-style: italic;
+text-shadow: 6px 6px #eed5d2;
+}
+
+.tour {
+    display: flex;
+    flex-direction: column;
+    row-gap: 600px;
+    column-gap: 150px;
+    width: 100%;
+    background-color: black;
+
+}
+
+.left{
+    
+    width: 100%;
+    height: 160px;
+    background-color: #f0fff0;
+}
+
+.left dt {
+    float: left;
+}
+
+.left dd {
+    float: right;
+}
+
+.right {
+    
+    width: 100%;
+    height: 160px;
+    background-color: #f0ffff;
+}
+
+.right dt {
+    float: right;
+}
+
+.right dd {
+    float: left;
+}

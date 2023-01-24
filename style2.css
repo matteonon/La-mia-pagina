@@ -17,7 +17,7 @@ text-shadow: 6px 6px #eed5d2;
     row-gap: 600px;
     column-gap: 150px;
     width: 100%;
-    background-color: black;
+    /*background-color: black;*/
 
 }
 
@@ -28,11 +28,11 @@ text-shadow: 6px 6px #eed5d2;
     background-color: #f0fff0;
 }
 
-.left dt {
+.left a {
     float: left;
 }
 
-.left dd {
+.left p {
     float: right;
 }
 
@@ -43,10 +43,10 @@ text-shadow: 6px 6px #eed5d2;
     background-color: #f0ffff;
 }
 
-.right dt {
+.right a {
     float: right;
 }
 
-.right dd {
+.right p {
     float: left;
 }

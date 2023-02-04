@@ -6,9 +6,9 @@ display:flex;
 }
 
 .titolo{
-text-align: centre;
+text-align: center;
   color:#ff4500;
-  font-family: 'Times New Roman',Times;serif;
+  font-family: 'Times New Roman', times ,serif;
   font-size:36pt;
   font-weight: bold;
   font-style: italic;
@@ -16,5 +16,5 @@ text-align: centre;
 }
 
 .descrizione p {
-text-align: centre;
+text-align: center;
 }

@@ -1,0 +1,20 @@
+.immagine{
+display:flex;
+  flex-direction: column;
+  width: auto;
+  height: auto:
+}
+
+.titolo{
+text-align: centre;
+  color:#ff4500;
+  font-family: 'Times New Roman',Times;serif;
+  font-size:36pt;
+  font-weight: bold;
+  font-style: italic;
+  text-shadow: 6px 6px #eed5d2;
+}
+
+.descrizione p {
+text-align: centre;
+}

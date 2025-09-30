@@ -10,48 +10,6 @@
 
     <link rel="stylesheet" href="style2.css" type="text/css" />
 
-  <!-- Roll di foto automatiche -->
-    <style>
-    body {
-      font-family: sans-serif;
-      margin: 0;
-      padding: 0;
-      display: flex;
-      justify-content: center;
-      background: #f5f5f5;
-    }
-
-    .roll-container {
-      width: 90%;
-      max-width: 1000px;
-      overflow: hidden;
-      border-radius: 12px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
-      background: #fff;
-      padding: 10px;
-    }
-
-    .roll {
-      display: flex;
-      animation: scroll 20s linear infinite;
-    }
-
-    .roll img {
-      height: 200px;
-      margin: 5px;
-      border-radius: 10px;
-      flex-shrink: 0;
-    }
-
-    @keyframes scroll {
-      0% {
-        transform: translateX(0);
-      }
-      100% {
-        transform: translateX(-50%);
-      }
-    }
-  </style>
 </head>
 <body>
     <a href="index.html">Home page</a>
@@ -131,30 +89,115 @@ Il primo passo, una volta giunto in paese, è trovare un ostello. Non è facile,
           </div>
 
         </div>
-
-
-
-
-</body>
-</html>
-
-<body>
-  <div class="roll-container">
+<div class="roll-container">
     <div class="roll">
-      <!-- immagini ripetute due volte per creare un loop fluido -->
-      <img src="foto1.jpg" alt="Foto 1">
-      <img src="foto2.jpg" alt="Foto 2">
-      <img src="foto3.jpg" alt="Foto 3">
-      <img src="foto4.jpg" alt="Foto 4">
-      <img src="foto5.jpg" alt="Foto 5">
+      <div class="slide">
+        <img src="foto1.jpg" alt="Foto 1">
+        <div class="caption">Villafranca del Bierzo</div>
+      </div>
+      <div class="slide">
+        <img src="foto2.jpg" alt="Foto 2">
+        <div class="caption">Partenza da Santander</div>
+      </div>
+      <div class="slide">
+        <img src="foto3.jpg" alt="Foto 3">
+        <div class="caption">Ostello trovato</div>
+      </div>
+      <div class="slide">
+        <img src="foto4.jpg" alt="Foto 4">
+        <div class="caption">Primo giorno di cammino</div>
+      </div>
+      <div class="slide">
+        <img src="foto5.jpg" alt="Foto 5">
+        <div class="caption">Arrivo a Santiago</div>
+      </div>
 
-      <!-- ripetizione -->
-      <img src="foto1.jpg" alt="Foto 1">
-      <img src="foto2.jpg" alt="Foto 2">
-      <img src="foto3.jpg" alt="Foto 3">
-      <img src="foto4.jpg" alt="Foto 4">
-      <img src="foto5.jpg" alt="Foto 5">
+      <!-- Ripetizione per il loop -->
+      <div class="slide">
+        <img src="foto1.jpg" alt="Foto 1">
+        <div class="caption">Villafranca del Bierzo</div>
+      </div>
+      <div class="slide">
+        <img src="foto2.jpg" alt="Foto 2">
+        <div class="caption">Partenza da Santander</div>
+      </div>
+      <div class="slide">
+        <img src="foto3.jpg" alt="Foto 3">
+        <div class="caption">Ostello trovato</div>
+      </div>
+      <div class="slide">
+        <img src="foto4.jpg" alt="Foto 4">
+        <div class="caption">Primo giorno di cammino</div>
+      </div>
+      <div class="slide">
+        <img src="foto5.jpg" alt="Foto 5">
+        <div class="caption">Arrivo a Santiago</div>
+      </div>
     </div>
   </div>
+
+  <style>
+    body {
+      font-family: sans-serif;
+      background: #f5f5f5;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 0;
+      padding: 20px;
+    }
+
+    .roll-container {
+      width: 90%;
+      max-width: 1000px;
+      overflow: hidden;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+      background: #fff;
+      padding: 10px;
+      margin-top: 20px;
+    }
+
+    .roll {
+      display: flex;
+      animation: scroll 20s linear infinite;
+    }
+
+    .slide {
+      position: relative;
+      flex-shrink: 0;
+      margin: 5px;
+    }
+
+    .slide img {
+      height: 200px;
+      border-radius: 10px;
+      display: block;
+      transition: transform 0.3s;
+    }
+
+    .slide img:hover {
+      transform: scale(1.1);
+    }
+
+    .caption {
+      position: absolute;
+      bottom: 8px;
+      left: 8px;
+      background: rgba(0, 0, 0, 0.6);
+      color: #fff;
+      padding: 5px 10px;
+      border-radius: 5px;
+      font-size: 14px;
+      pointer-events: none;
+    }
+
+    @keyframes scroll {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(-50%); }
+    }
+  </style>
 </body>
-</html>
+
+
+
